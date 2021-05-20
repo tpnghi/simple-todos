@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface TodoValue {
   key: number;
@@ -7,16 +7,14 @@ export interface TodoValue {
 }
 export interface TodosState {
   value: TodoValue[];
-  status: "idle" | "loading" | "failed";
 }
 
 const initialState: TodosState = {
   value: [],
-  status: "idle",
 };
 
 export const todosSlice = createSlice({
-  name: "todos",
+  name: 'todos',
   initialState,
   reducers: {
     addTodo: (state, action: PayloadAction<string>) => {
