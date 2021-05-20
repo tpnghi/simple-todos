@@ -57,6 +57,10 @@ npm start
 
 8. Complete.
 
+## Demo
+
+![Example](./pictures/example.png)
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
