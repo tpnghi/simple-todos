@@ -1,15 +1,21 @@
-import PropTypes from "prop-types";
-import "./Todo.css";
+import PropTypes from 'prop-types';
+import './Todo.css';
 
-function Todo(props: { text: string; isCompleted: boolean; onClick: any }) {
-  const { text, isCompleted, onClick } = props;
+function Todo(props: {
+  key: number;
+  text: string;
+  isCompleted: boolean;
+  onClick: any;
+}) {
+  const { key, text, isCompleted, onClick } = props;
   return (
     <li
       style={{
-        cursor: "pointer",
-        textDecoration: isCompleted ? "line-through" : "none",
+        cursor: 'pointer',
+        textDecoration: isCompleted ? 'line-through' : 'none',
       }}
       onClick={onClick}
+      key={key}
     >
       {text}
     </li>
