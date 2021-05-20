@@ -59,7 +59,7 @@ npm start
 
 ## Demo
 
-![Example](./pictures/example.png)
+![Example](./screenshots/example.png)
 
 ## Learn More
 
